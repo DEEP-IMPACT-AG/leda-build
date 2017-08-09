@@ -1,6 +1,7 @@
 FROM buildpack-deps:stretch-scm
 
-ENV LEIN_ROOT 1
+ENV LEIN_ROOT=1
+ENV LANG=C.UTF-8
 
 RUN   curl -s https://packagecloud.io/install/repositories/github/git-lfs/script.deb.sh | bash \
    && apt-get update \
