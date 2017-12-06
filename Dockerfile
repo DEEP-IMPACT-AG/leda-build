@@ -33,5 +33,3 @@ RUN   apt-get update \
    && apt-get clean
 
 VOLUME /var/lib/docker
-
-ENTRYPOINT ["dockerd-entrypoint.sh"]
